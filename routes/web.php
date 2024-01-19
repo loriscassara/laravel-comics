@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 //"characters" page link
 Route::get('/', function () {
-    return view('characters');
+    return view('home');
 })->name('characters');
 
 //"comics" page link
