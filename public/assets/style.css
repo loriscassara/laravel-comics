@@ -1,0 +1,4 @@
+/* Header elements */
+header img:hover { cursor: pointer; }
+
+header a:hover { border-bottom: solid 2px #0c7cec; }
