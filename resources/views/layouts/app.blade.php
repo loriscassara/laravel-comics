@@ -30,6 +30,9 @@
     <!-- Comics section -->
     @yield('comicsContent')
 
+    <!-- Movies section -->
+    @yield('moviesContent')
+
     <!-- 
         Import bootstrap v5.3 script
     -->
