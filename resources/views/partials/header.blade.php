@@ -1,18 +1,3 @@
-@php
-    //Header's links
-    $links = [
-        'CHARACTERS',
-        'COMICS',
-        'MOVIES',
-        'TV',
-        'GAMES',
-        'COLLECTIBLES',
-        'VIDEOS',
-        'FANS',
-        'NEWS'
-    ]
-@endphp
-
 <header>
     {{-- start nav --}}
     <nav class="navbar navbar-expand-lg bg-body-light">
@@ -23,13 +8,35 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-4">
-                    @foreach($links as $link)
                     <li class="fw-bold">
-                        <a class="nav-link active" aria-current="page" href="#">{{ $link }}</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('characters') }}">CHARACTERS</a>
                     </li>
-                    @endforeach
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('comics') }}">COMICS</a>
+                    </li>
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('movies') }}">MOVIES</a>
+                    </li>
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('tv') }}">TV</a>
+                    </li>
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('games') }}">GAMES</a>
+                    </li>
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('collectibles') }}">COLLECTIBLES</a>
+                    </li>
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('videos') }}">VIDEOS</a>
+                    </li>
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('fans') }}">FANS</a>
+                    </li>
+                    <li class="fw-bold">
+                        <a class="nav-link active" aria-current="page" href="{{ route('news') }}">NEWS</a>
+                    </li>
                     <li class="nav-item dropdown fw-bold">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="{{ route('shop') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             SHOP
                         </a>
                         <ul class="dropdown-menu">
