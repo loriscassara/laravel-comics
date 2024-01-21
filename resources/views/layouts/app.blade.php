@@ -24,6 +24,12 @@
     <!-- Header section -->
     @include('partials.header')
 
+    <!-- Character section -->
+    @yield('charactersContent')
+
+    <!-- Comics section -->
+    @yield('comicsContent')
+
     <!-- 
         Import bootstrap v5.3 script
     -->

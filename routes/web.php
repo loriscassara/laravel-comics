@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 //"comics" page link
 Route::get('comics', function () {
-    return view('comics', config('data.comics'));
+    return view('comics', config('data'));
 })->name('comics');
 
 //"movies" page link
